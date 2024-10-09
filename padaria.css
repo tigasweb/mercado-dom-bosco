@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;/**/
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+header  {
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+
+    align-items: center; /*Alinhar os itens do nosso Header para o centro*/
+
+    justify-content: space-evenly; /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
+
+    padding: 2%;  /* Cuida do Preenchimento */
+
+    background-color: rgb(56, 49, 49); /* Cor de fundo do nosso Cabeçalho/Header */
+
+    overflow: hidden; /* */
+}
+
+header > h1 { /*Selecionamos aqui a cor da letra do nosso h1 ou seja,do nosso titulo*/
+
+    color: white;/*chamamos a propriedade color e definimos uma cor em questão*/
+
+    font-size: 45px /*Tamanho da letra*/;
+}
+
+header > img { /*Aqui estamos chamando nossa imagem para ser atribuidas alterações*/
+    width: 11rem;/*Largura da nossa imagem */
+    height: auto;/*Tamanho da nossa imagem no tamanho automatico*/
+
+}
+
+
+
+.item-menu-header { /* Nossas li que estão dentro do LIST MENU, onde se encontram os nomes dos itens apresentados no HEADER */
+    margin-right: 25px; /* margem da direita */
+}
+
+.item-menu-header > a:hover { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO, e o Hover responsável pela modificação de cor ao passar o cursor em cima.*/
+    color: yellow; /* Aqui atribuimos uma cor */
+    transition: 1s; /* E o tempo em que será exibido ao passar o cursor */
+}
+
+.item-menu-header > a { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO */
+    color: white; /* Cor das letras */
+    text-decoration: none; /* Responsável por tirar o sublinhado inferior que estava visível */
+    font-size: 0.8em; /* Tamanho da letra */
+} 
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem; /**/
+    height: 2.6rem;
+}
+
+.nav-links {
+    list-style: none;/*Retirando o estilo de lista*/
+    display: flex;/*tornando a caixa flexivel, e lado a lado*/
+    margin: 0;/*zerando os espaços de margem que são habilitados por padrão*/
+    padding: 0;/*zerando os preenchimentos que são habilitados por padrão*/
+
+}
+
+.nav-links li {
+    padding: 0 9px;/*preenchimento da LI superior/inferior 0 e laterais em 9px*/
+}
+
+.nav-links a,
+.nav-links-mobile a {
+    color: white;
+     
+}
+
+.mobile-menu {
+    display: none;/**/
+    position: fixed;/**/
+    top: 0;/**/
+    right: 0;/**/
+    width: 60%;/**/
+    height: 100%;/**/
+    background-color: black;/**/
+    flex-direction: column;/**/
+    align-items: center;/**/
+    font-size: 1.8rem;/**/
+}
+
+.nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    width: 0%;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links-mobile li {
+    border-bottom: 1px solid #787272;
+    padding-bottom: 1.2rem;
+}
+
+
+
+
+
+
